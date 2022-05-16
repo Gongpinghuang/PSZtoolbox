@@ -106,7 +106,7 @@ for i=1:numel(R)
     % For each filter length...
     for p=1:length(Ip)
         % Display
-        dispPSZ(['Ip: ',int2str(Ip(p)),' K: ',int2str(K{i}),' N: ',int2str(R{i})],2);
+        dispPSZ(['Ip: ',int2str(Ip(p)),' K: ',int2str(K{i}),' R: ',int2str(R{i})],2);
 
         % ....................... Compute filters .........................
         % Setup filter bank

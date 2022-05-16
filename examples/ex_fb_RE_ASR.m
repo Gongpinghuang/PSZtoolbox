@@ -37,9 +37,9 @@ for n=1:length(R)
     for p=1:length(Ip)
         
         % Display
-        dispPSZ(['Lp: ',int2str(Ip(p)),...
+        dispPSZ(['Ip: ',int2str(Ip(p)),...
                  ' K: ',int2str(K(n)),...
-                 ' N: ',int2str(R(n))],2);
+                 ' R: ',int2str(R(n))],2);
         % Setup filter bank
         FB = gdftFB_Class(K(n),R(n),Ip(p),false);
         % Store metrics
