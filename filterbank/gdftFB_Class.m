@@ -620,7 +620,7 @@ classdef gdftFB_Class < handle
             FLOPs = FLOPs+5*(Nx*K+1)*Nfft.*log2(Nfft);
             FLOPs = FLOPs+(3*Nx*K+(1/6))*Ix_k;
             FLOPs = FLOPs+(Nx/R)*(2*Ip+2*K+5*K*log2(K))*Ix;
-            FLOPs = FLOPs+6*(Nx*K+1)*Ix_an;
+            FLOPs = FLOPs+(6*Nx*K+3)*Ix_an;
         end
 
     end
