@@ -263,21 +263,23 @@ end
 % Plot style
 cRGB    = lines(8);
 lineS   = {'-',':'};
-marker  = {'none','x'};
+marker  = {'none','x';'none','o';'none','+'; 'none','<'};       
+markerS = [8,8;6,6;8,8;6,6];
 lineW   = {3,2};
 
 % For each metric...
 for p = 1:numel(met2plot)
     % Initialize figure
     figure('Color',[1 1 1]);
-    % For each solver...
-    for i=1:Nsolver
-        % For each subband...
-        for k=1:Nk
+    % For each subband...
+    for k=1:Nk
+        % For each solver...
+        for i=1:Nsolver
             % Plot
             semilogx(P,met_av_x_sb{i}.(met2plot{p})(:,k),lineS{i},...
                      'LineWidth',lineW{i},'Color',cRGB(k,:),...
-                     'LineStyle',lineS{i},'Marker',marker{i});
+                     'LineStyle',lineS{i},'Marker',marker{k,i},...
+                     'MarkerSize',markerS(k,i));
             hold on;
         end
     end
