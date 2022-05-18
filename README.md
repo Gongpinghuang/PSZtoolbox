@@ -13,7 +13,7 @@ Moreover, the toolbox includes the polyphase implementation for Generalized Disc
 * Harteneck, M., Weiss, S., & Stewart, R. W. (1999). Design of near perfect reconstruction oversampled filter banks for subband adaptive filters. _IEEE Transactions on Circuits and Systems II: Analog and Digital Signal Processing_, 46(8), 1081–1085. https://doi.org/10.1109/82.782056
 
 This toolbox has been used to obtain the results included in:
-* Molés-Cases, V., Piñero, M., & Gonzalez, A. (2022). SOME TITLE. _SOME JOURNAL_. 
+* Molés-Cases, V., Piñero, G., & Gonzalez, A. (2022). On the Performance of Personal Sound Zones Systems with Subband Filtering. Submitted to  _IEEE/ACM Transactions on Audio Speech and Language Processing_. 
 
 ## Folders
 The toolbox is organized in the following folders:
