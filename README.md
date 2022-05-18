@@ -22,7 +22,7 @@ The toolbox is organized in the following folders:
 * `filterbank`: source files related with filter banks.
 * `mex`: source files for the MEX functions.
 * `rir`: folder where the Room Impulse Responses (RIR) of the system are stored.
-* `utilites`: source files with different utilites for the toolbox.
+* `utilities`: source files with different utilities for the toolbox.
 
 ## Room Impulse Responses
 The Room Impulse Responses (RIR) of the system must be stored in a `.mat` file within the `rir` folder. The `.mat` file must contain an structure called `RIR` with the following fields:
