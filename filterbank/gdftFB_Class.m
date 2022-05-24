@@ -573,7 +573,7 @@ classdef gdftFB_Class < handle
             % ........................ Compute ASR ........................
             % Compute convolution of prototype filter and aliasing terms
             Y      = fft(exp(j*2*pi*(1:R-1).*(0:Ip-1).'/R).*hp(:),Nfft,1);
-            X      = ifft(Hp.*Y,Nfft,1);
+            X      = ifft(conj(Hp).*Y,Nfft,1);
             % Compute aliasing in the subbands normalized by filter energy
             ASR_dB = 10*log10((1/(R-1))*sum(abs(X(:)).^2)/sum(hp.^2));
         end
